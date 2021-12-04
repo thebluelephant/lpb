@@ -1,0 +1,81 @@
+@import "./Global";
+
+.menu {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+    &__prices {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-evenly;
+        min-height: 10vh;
+        align-items: center;
+
+        .price {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+
+            &__label {
+                margin-right: 10px;
+            }
+        }
+        .separator {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #701c1f00, $red, #701c1f00);
+            width: 70vw;
+        }
+    }
+    &__container {
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-family: "American Typewriter";
+            font-weight: 500;
+            font-size: 5vh;
+            color: $red;
+        }
+
+        .dish {
+            font-family: "system-ui";
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 80vw;
+
+            p {
+                margin: 0 0 5px 0;
+            }
+
+            &__title {
+                font-weight: bold;
+                font-size: 3vh;
+            }
+
+            &__subtitle {
+                text-align: center;
+                font-size: 3vh;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .menu {
+        &__prices {
+            flex-direction: column;
+            top: 15px;
+            justify-content: unset;
+
+            p {
+                margin: 0 0 5px 0;
+            }
+        }
+    }
+}
