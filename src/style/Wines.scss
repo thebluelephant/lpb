@@ -1,0 +1,123 @@
+@import "./Global";
+
+.wines {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+
+  &__types {
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    height: 100px;
+
+    .buttons {
+      width: 50vw;
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        height: 40px;
+        width: 150px;
+        background-color: $yellow;
+        border: 0;
+        border-radius: 10px;
+        font-family: "American Typewriter";
+        color: $red;
+        font-weight: 600;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 5px 8px 11px #00000030;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .cellar-informations {
+      text-align: center;
+
+      &__title {
+        font-size: 30px;
+      }
+
+      &__pitcher-title,
+      &__cellar-title {
+        text-align: initial;
+        font-size: 25px;
+
+        &--capitalized {
+          text-transform: capitalize;
+        }
+      }
+
+      &__description,
+      &__prices {
+        font-family: "system-ui";
+        font-weight: 500;
+        max-width: 80vw;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .wine,
+    .prices {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .wine {
+      font-family: "system-ui";
+      max-width: 70vw;
+      text-align: center;
+
+      &__title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      &__description {
+        margin: 5px 0;
+      }
+
+      &__description,
+      &__appellation {
+        font-weight: 500;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .wines {
+    &__types {
+      .buttons {
+        width: 80vw;
+
+        button {
+          width: 90px;
+        }
+      }
+    }
+
+    &__container {
+      .cellar-informations {
+        &__pitcher-title,
+        &__cellar-title {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

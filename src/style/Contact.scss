@@ -1,0 +1,29 @@
+@import "./Global";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    max-width: 70vw;
+
+    .item {
+      margin-bottom: 30px;
+      h3 {
+        font-size: 25px;
+        margin: 0 0 5px 0;
+      }
+      p {
+        margin: 0;
+        font-family: "system-ui";
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+$bg-color: #ede6d8;
+$red: #701c1f;
+$yellow: #de981e;
+
+@font-face {
+  font-family: "American Typewriter";
+  font-style: normal;
+  font-weight: normal;
+  src: local("American Typewriter"),
+    url("./font/American_Typewriter_Regular.ttf") format("truetype");
+}
+
+.app {
+  position: relative;
+  background-color: $bg-color;
+  height: 100%;
+  width: 100%;
+  top: 75px;
+}
+
+h3 {
+  font-family: "American Typewriter";
+  font-weight: bold;
+  color: $red;
+}
