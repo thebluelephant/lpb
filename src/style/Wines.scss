@@ -57,11 +57,14 @@
         }
       }
 
+      &__prices {
+        font-weight: bold;
+      }
       &__description,
       &__prices {
         font-family: "system-ui";
-        font-weight: 500;
         max-width: 80vw;
+        font-size: 20px;
 
         p {
           font-size: 20px;
@@ -90,11 +93,13 @@
 
       &__description {
         margin: 5px 0;
+        font-size: 18px;
       }
 
       &__description,
       &__appellation {
         font-weight: 500;
+        font-size: 18px;
         font-style: italic;
       }
     }
