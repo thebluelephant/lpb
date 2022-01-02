@@ -10,6 +10,7 @@ const Homepage = () => {
         if (!dataLoaded) {
             fetchHomepageData().then((res) => {
                 setHomepageData(res)
+                console.log(res);
                 setDataLoaded(true)
             })
         }
@@ -27,6 +28,7 @@ const Homepage = () => {
                 </div>
             }
 
+            <p className='homepage__phone'>Téléphone : {homepageData?.phone} </p>
             <img src={'assets/LPB-banniereAccueil-title.png'} className="homepage homepage__image homepage__image--title" alt="le ptit bistrot title" />
             <h3 className="homepage homepage__title homepage__title--responsive">Le p'tit bistrot</h3>
             <img src={'assets/LPB-banniereAccueil-subtitle.png'} className="homepage homepage__image homepage__image--subtitle" alt="le ptit bistrot subtitle" />
