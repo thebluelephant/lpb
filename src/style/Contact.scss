@@ -2,27 +2,59 @@
 
 .contact {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
+  flex-direction: column;
+  min-width: 100%;
 
   h2 {
-    margin-bottom: 50px;
+    margin: 40px 0;
+    max-width: 70vw;
   }
 
   &__container {
     max-width: 70vw;
+    flex-direction: row;
 
-    .item {
-      margin-bottom: 30px;
-      h3 {
-        font-size: 25px;
-        margin: 0 0 5px 0;
+    .carroussel {
+      max-width: 40vw;
+      margin-top: 50px;
+    }
+
+    .informations {
+      flex-direction: column;
+
+      .item {
+        margin-bottom: 30px;
+
+        h3 {
+          font-size: 30px;
+          margin: 0 0 5px 0;
+        }
+
+        p {
+          font-size: 20px;
+          margin: 0;
+          font-family: "system-ui";
+        }
       }
-      p {
-        margin: 0;
-        font-family: "system-ui";
+    }
+  }
+
+  @media (max-width: 900px) {
+    h2 {
+      margin-bottom: 0;
+      margin: 10px 0 0 0;
+    }
+
+    &__container {
+      flex-direction: column;
+
+      .carroussel {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-width: 90vw;
       }
     }
   }

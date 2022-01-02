@@ -1,9 +1,9 @@
 @import "./Global";
 
 .header {
-  background-color: $red;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  z-index: 3;
+  background-color: $yellow;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 4;
   position: absolute;
   width: 100%;
   height: 75px;
@@ -26,20 +26,20 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: $red;
+  background-color: $yellow;
 }
 
 .header li a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: $yellow;
+  color: $red;
   font-size: 30px;
 }
 
 .header li a:hover,
 .header .nav-btn:hover {
-  background-color: $red;
+  background-color: $yellow;
 }
 
 /* nav */
@@ -62,7 +62,7 @@
 }
 
 .header .nav-icon .navicon {
-  background: $yellow;
+  background: $red;
   display: block;
   height: 2px;
   position: relative;
@@ -72,7 +72,7 @@
 
 .header .nav-icon .navicon:before,
 .header .nav-icon .navicon:after {
-  background: $yellow;
+  background: $red;
   content: "";
   display: block;
   height: 100%;
@@ -119,10 +119,26 @@
 /* 48em = 768px */
 
 @media (min-width: 48em) {
+  .header {
+    background-color: $red;
+  }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: $red;
+  }
+
+  .header li a:hover,
+  .header .nav-btn:hover {
+    background-color: $red;
+  }
   .header li {
     float: left;
   }
   .header li a {
+    color: $yellow;
     padding: 20px 30px;
   }
   .header .nav {
