@@ -10,6 +10,16 @@
             display: none;
         }
     }
+
+    &__phone {
+        position: absolute;
+        z-index: 4;
+        bottom: 15px;
+        left: 25px;
+        font-size: 30px;
+        margin: 0;
+        color: $yellow;
+    }
     &__informations {
         position: absolute;
         max-width: 40vw;
@@ -79,6 +89,15 @@
             }
         }
 
+        &__phone {
+            font-size: 20px;
+            margin: 0;
+            top : 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
         &__title {
             &--responsive {
                 display: flex;
@@ -89,6 +108,7 @@
                 position: absolute;
                 height: auto;
                 left: 15px;
+                top: 7%;
             }
         }
 
@@ -111,7 +131,7 @@
             }
 
             &--subtitle {
-                top: 13%;
+                top: 20%;
                 right: 5%;
                 width: 60vw;
                 height: auto;
