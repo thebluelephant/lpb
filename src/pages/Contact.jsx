@@ -11,7 +11,6 @@ const Contact = () => {
         if (!dataLoaded) {
             fetchContactPageData().then((res) => {
                 setContactpageData(res)
-                console.log(res);
                 setDataLoaded(true)
             })
         }

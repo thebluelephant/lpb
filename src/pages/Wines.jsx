@@ -16,7 +16,6 @@ const Wines = () => {
     useEffect(() => {
         if (!dataLoaded) {
             fetchCellarDescription().then((res) => {
-                console.log("RES", res);
                 setCellarDescriptions(res);
             })
             fetchWines().then((res) => {
