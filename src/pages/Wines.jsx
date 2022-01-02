@@ -16,6 +16,7 @@ const Wines = () => {
     useEffect(() => {
         if (!dataLoaded) {
             fetchCellarDescription().then((res) => {
+                console.log("RES", res);
                 setCellarDescriptions(res);
             })
             fetchWines().then((res) => {
@@ -64,7 +65,7 @@ const Wines = () => {
                     <span className='cellar-informations__pitcher-title--capitalized '>{wineTypes.get(wineList[0].type)}s </span>
                     au pichet
                 </h3>
-                <p className='cellar-informations cellar-informations__description'>{wineList[0].cellarDescription}</p>
+                <p style={{ whiteSpace: "pre-line" }} className='cellar-informations cellar-informations__description'>{wineList[0].cellarDescription}</p>
                 <div className='cellar-informations cellar-informations__prices'>
                     <p>2.30€ le verre</p>
                     <p>4 € le pichet de 25 cl</p>
