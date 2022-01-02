@@ -3,7 +3,7 @@
   "name": "Restaurant Le P'tit Bistrot - Saint Montan - Ardeche",
   "icons": [
     {
-      "src": "assets/favicon-32x32.png",
+      "src": "favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/x-icon"
     }

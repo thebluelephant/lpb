@@ -105,23 +105,23 @@ const Menu = () => {
             }
 
             {
-                menu.length &&
+                menu.length > 0 &&
                 <div className="menu menu__container">
                     <h2>Entrées</h2>
                     {
-                        starters.length && displayDish(starters)
+                        starters.length > 0 && displayDish(starters)
                     }
                     <h2>Plats</h2>
                     {
-                        mains.length && displayDish(mains)
+                        mains.length > 0 && displayDish(mains)
                     }
                     <h2>Fromage</h2>
                     {
-                        cheeses.length && displayDish(cheeses)
+                        cheeses.length > 0 && displayDish(cheeses)
                     }
                     <h2>Desserts</h2>
                     {
-                        desserts.length && displayDish(desserts)
+                        desserts.length > 0 && displayDish(desserts)
                     }
                 </div>
             }

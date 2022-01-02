@@ -116,8 +116,8 @@ const Wines = () => {
                 </div>
             </div>
             <div className="wines wines__container">
-                {wineList.length && cellarInformations()}
-                {wineList.length && displayWines(wineList)}
+                {wineList.length > 0 && cellarInformations()}
+                {wineList.length > 0 && displayWines(wineList)}
             </div>
         </div>
     );
