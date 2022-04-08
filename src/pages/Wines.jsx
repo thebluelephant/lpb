@@ -66,9 +66,9 @@ const Wines = () => {
                 </h3>
                 <p style={{ whiteSpace: "pre-line" }} className='cellar-informations cellar-informations__description'>{wineList[0].cellarDescription}</p>
                 <div className='cellar-informations cellar-informations__prices'>
-                    <p>2.30€ le verre</p>
-                    <p>4 € le pichet de 25 cl</p>
-                    <p>7 € le pichet de 50 cl</p>
+                    <p>3 € le verre</p>
+                    <p>5 € le pichet de 25 cl</p>
+                    <p>8 € le pichet de 50 cl</p>
                 </div>
                 <h3 className='cellar-informations cellar-informations__cellar-title'>Cave des {wineTypes.get(wineList[0].type)}s</h3>
             </div>)
