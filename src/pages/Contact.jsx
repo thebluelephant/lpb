@@ -35,7 +35,7 @@ const Contact = () => {
                             </div>
                             <div className='item'>
                                 <h3>N° Téléphone</h3>
-                                <p>{contactPageData.Phone}</p>
+                                <p>{contactPageData.phone}</p>
                             </div>
                             <div className='item'>
                                 <h3>Coordonnées géographiques</h3>
